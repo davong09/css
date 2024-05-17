@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid basic</title>
+    <style>
+        .grid-container {
+            display: grid; /* grid container 생성*/
+            /* grid container의 컬럼 설정, 100px 100px의 두 칸으로 구성 */
+            /* grid-template-columns: repeat(3, 100px); /* grid container의 컬럼 설정 */
+            /* 1ft은 fraction의 약자로 남은 공간을 1:1:1로 나누어줌,
+            만약 컨테이너의 너비가 300px이고, (3, 1fr) 이라면 100ox씩 나누어짐 */
+            grid-template-columns: repeat(3, 1fr); /* 1fr은 남은 공간을 1:1:1로 나누어줌 */
+            grid-template-rows: repeat(3, 100px); /* grid container 로우 설정  */
+            justify-items: center; /* 가로 정렬 */
+            align-items: center; /* 세로 정렬 */
+        }
+        .grid-item {
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">item-1</div>
+        <div class="grid-item">item-2</div>
+        <div class="grid-item">item-3</div>
+        <div class="grid-item">item-4</div>
+        <div class="grid-item">item-5</div>
+        <div class="grid-item">item-6</div>
+        <div class="grid-item">item-7</div>
+        <div class="grid-item">item-8</div>
+        <div class="grid-item">item-9</div>
+        <div class="grid-item">item-10</div>
+    </div>
+</body>
+</html>
