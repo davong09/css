@@ -11,15 +11,19 @@
             display:grid;
             width: 500px;
             margin: 0 auto;
+            color: black;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-gap: 10px;
         }
 
         .grid-item {
             width: 100%;
-            background-color: red;
+            background-color: orange;
         }
 
         .grid-item:nth-child(2n) {
-            background-color: #bd4242;
+            background-color: yellow;
         }
 
         .item2 {
